@@ -15,7 +15,7 @@ def get_db():
 def home(): 
     return {"message": "FastAPI Docker Lab"} 
  
-@app.post("/students") 
+@app.post("/students")  
 def add_student(name: str, course: str): 
     db = get_db() 
     cursor = db.cursor() 
